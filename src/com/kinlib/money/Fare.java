@@ -7,7 +7,7 @@ public class Fare {
 
 	public void setprice(int price) {
 		if (price < 4) {
-			throw new IllegalArgumentException("Price must be greater than zero");
+			throw new IllegalArgumentException("Price must be greater than 50");
 		}
 		this.FineAmount = price;
 

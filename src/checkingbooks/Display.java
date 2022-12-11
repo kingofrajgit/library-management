@@ -14,7 +14,7 @@ public class Display {
 		Statement statement = connection.createStatement();
 		ResultSet rs = statement.executeQuery(query);
 		System.out.println("stdId" + "  " + "bookId" + "  " + "bookname" + "  " + "gettime");
-		int size = 4;
+		
 
 		while (rs.next()) {
 			int i = 0;

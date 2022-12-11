@@ -30,7 +30,7 @@ public class InDel {
 	public static void delydelete(String name, String bookid) throws Exception {
 		Connection connection = Dbcon.dbcon();
 		StringBuilder querystr = new StringBuilder();
-		querystr.append("select * from kinlib where StuId=('").append(name).append("') and BookId=('").append(bookid)
+		querystr.append("select * from kinlib where StuId = ('").append(name).append("') and BookId=('").append(bookid)
 				.append("')  ");
 		String query = querystr.toString();
 		Statement statement = connection.createStatement();
